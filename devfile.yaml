@@ -1,0 +1,16 @@
+schemaVersion: 2.1.0
+metadata:
+    name: java-sample-ws
+projects:
+  - name: javasample
+    git:
+      remotes:
+        origin: "https://github.com/PavithraShankar-Github/JavaSample.git"
+      checkoutFrom:
+        revision: main
+components:
+  - name: tools
+    container:
+      image: registry.access.redhat.com/ubi8/openjdk-11
+      args: ['-f', '/dev/null'] 
+      command: ['tail'] 
