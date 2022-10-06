@@ -13,4 +13,8 @@ components:
     container:
       image: registry.access.redhat.com/ubi8/openjdk-11
       args: ['-f', '/dev/null'] 
-      command: ['tail'] 
+      command: ['tail']
+  - name: cluster-x86
+    container:
+      image: 'localhost:5000/cloud_cluster_nonet:latest'
+    
